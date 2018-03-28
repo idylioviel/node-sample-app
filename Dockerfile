@@ -10,7 +10,7 @@ COPY package.json ./
 RUN npm install
 
 # Copiar tudo que esta no diretorio corrente para o $WORKDIR
-COPY . .
+COPY . /usr/src/app
 
 # Porta onde a aplicacao recebe conexoes
 EXPOSE 8080
